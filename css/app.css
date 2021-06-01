@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  margin: 2px;
+  min-width: 250px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #2196F3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+position:absolute;
+width:100%;
+height:100%;
+z-index: 1;
+}
+
+input {
+  margin: 0;
+  border: none;
+  box-shadow: 0 0 0 2.0px #fff;
+  border-radius: 8px;
+  width: 20%;
+  padding: 15px;
+  font-size: 18px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0px rgb(20, 228, 106);
+  border-radius: 8px;
+}
+
+.addBtn {
+  padding: 15px;
+  width: 20%;
+  background-color: rgb(20, 228, 106);
+  box-shadow: 0 0 0 2.0px rgb(20, 228, 106);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+.addBtn:hover {
+  background-color: #888;
+  color: #fff;
+}
+
+footer {
+  padding-top: 25px;
+}
+
+.test{
+  background-color: rgb(200, 228, 106);
+  box-shadow: 0 0 0 2.0px rgb(20, 228, 106);
+}
+
+#counter_display{
+  left: 10px;
+  /* background-color: green; */
+  width:40px;
+  height:40px;
+}
+
+#new_counter_btn{
+  right: 10px;
+  width:40px;
+  height:40px;
+}
+
+.round{
+  border-radius: 50%;
+}
+
+.button_bar{
+  width:100%;
+  height:50px;
+}
+
+#main_btn{
+  display: inline-block;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  left : 50%;
+  transform: translate( -50%, 0%);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  /* background-color: #FFA726; */
+}
+
+/* my_tooltip container */
+.my_tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* my_tooltip text */
+.my_tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  
+  /* Position the my_tooltip text - see examples below! */
+  position: absolute;
+  z-index: 3;
+
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+/* Show the my_tooltip text when you mouse over the my_tooltip container */
+.my_tooltip:hover .tooltiptext {
+  visibility: visible;
+  /* overflow: visible; */
+}
+
+.hint::before{
+  font-family: "Font Awesome 5 Free"; 
+font-weight: 900;
+  content:"\f05a";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color:blue;
+  -webkit-font-smoothing: antialiased;
+}
+
+.edit::before{
+  font-family: "Font Awesome 5 Free"; 
+font-weight: 900;
+  content:"\f304";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color:gray;
+  -webkit-font-smoothing: antialiased;
+}
+
+.delete::before{
+  font-family: "Font Awesome 5 Free"; 
+font-weight: 900;
+  content:"\f1f8";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color:red;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+a.button {
+  font-size:24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff !important; 
+  fill:#fff;
+  background-color: #EF5350;
+  border: none;
+  box-shadow: 0 4px #999;
+}
+
+a.button:hover 
+{
+  background-color: #ddd;
+  color: black;
+  fill:black;
+}
+
+a.button:active 
+{
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.view_box{
+  text-align: center;
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  right:25%;
+  overflow-;
+  background-color: #ddd;
+}
+
+.button_bar{
+  background-color: #1976D2;
+  position:fixed;
+  z-index: 100;
+}
+
+.button_bar > a.button {
+  position:absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+i.fas {
+  position:absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  /* color:white; */
+}
