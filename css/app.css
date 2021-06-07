@@ -180,6 +180,11 @@ a.button:active
   background-color: #ddd;
 }
 
+.view_box_responsive{
+  /* background-color: #ddd; */
+  padding: 15px;
+}
+
 .button_bar{
   background-color: #1976D2;
   position:fixed;
@@ -209,6 +214,11 @@ div.action_btn_bar{
 
 .row{
   margin:5px;
+}
+
+.section_title{
+  text-align: center;
+  font-size:large;
 }
 /**************************/
 /*                        */
