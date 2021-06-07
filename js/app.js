@@ -102,7 +102,7 @@ function flipflop( e )
     case "new_counter_btn":
       switch_pages( "create_new" );
       break;
-    case "counter_display":
+    case "cancel_create":
     case "cancel_editing":
       switch_pages("view_page");
       break;
@@ -132,4 +132,19 @@ function dummy_cancel_ramp()
 
   rampdiv.style.display="block";
   ramping.style.display="none";
+}
+
+function dummy_create_new()
+{
+  if( Math.random() <= 0.5 ){
+    var x = document.getElementById("success_snackbar");
+  }
+  else{
+    var x = document.getElementById("failure_snackbar");
+  }
+
+  x.classList.add("show");
+  setTimeout( function(){
+    x.classList.remove("show");
+  }, 3000);
 }

@@ -60,6 +60,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Main Stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/extras.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
 
     <!--logo-->
@@ -136,6 +137,7 @@
         <div class="action_btn_bar">
 
         </div>
+
         <div class="view_box_responsive  container-sm bg-dark text-white">
 
             <div class="row justify-content-center">
@@ -212,8 +214,62 @@
 
     <div id="create_new" class="page" style="display:none">
         <div class="button_bar">
-            <a id="counter_display" class="button round slot_top_left_1" onclick="flipflop(this)"> <i class="fas fa-home"></i> </a>
+            <a id="done_create" class="button round slot_top_left_1" onclick="dummy_create_new()"> <i class="fas fa-check-circle"></i> </a>
+            <a id="cancel_create" class="button round slot_top_right_1" onclick="flipflop(this)"> <i class="fas fa-times-circle"></i> </a>
+            <!-- <a id="counter_display" class="button round slot_top_left_1" onclick="flipflop(this)"> <i class="fas fa-home"></i> </a> -->
         </div>
+
+        <div class="action_btn_bar"></div>
+        
+        <div class="view_box_responsive container-sm bg-success text-white">
+
+            <div class="row justify-content-center">
+               <div class="section_title col-8">
+                    Create new Counter
+               </div> 
+            </div>
+
+            <form id="create_form">
+
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label"> Full Label </label>
+                    <input type="text" class="form-control col-md-4" name="full_label" value="Dummy Label">
+                    <label class="offset-md-2 col-md-2 col-form-label"> Short Label </label>
+                    <input type="text" class="form-control col-md-2" name="short_label" value="DL">
+                </div>
+
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label"> Update Frequency </label>
+                    <select class="form-select col-md-4" name="update_freq">
+                        <option selected value="1"> Daily </option>
+                        <option value="7"> Weekly </option>
+                    </select>
+                    <label class="offset-md-2 col-md-2 col-form-label"> Amount </label>
+                    <input type="number" class="form-control col-md-2" name="amount" value="60">
+                </div>
+
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label"> Forward multiplier </label>
+                    <input type="number" class="form-control col-md-2" name="fmult" value="1">
+                    <label class="col-md-2 col-form-label"> Backward multiplier </label>
+                    <input type="number" class="form-control col-md-2" name="bmult" value="1">
+                    <label class="col-md-2 col-form-label"> Cutoff </label>
+                    <input type="number" class="form-control col-md-2" name="cutoff" value="100">
+                </div>
+
+                <div class="row form-group">
+                    <label class="col-md-2 col-form-label"> Holiday multiplier </label>
+                    <input type="number" class="form-control col-md-2" name="hmult" value="2">
+                    <label class="col-md-2 col-form-label"> Hint </label>
+                    <input type="Text" class="form-control col-md-6" name="hint" value="Nothing special here..">
+                </div>
+                
+            </form>
+
+            <div id="success_snackbar" class="snackbar translate-middle"> Successfully created counter </div>
+            <div id="failure_snackbar" class="snackbar translate-middle"> Failed to create counter </div>
+        </div>
+
     </div>
     
 <script src="js/app.js"></script>
