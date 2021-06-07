@@ -197,7 +197,7 @@ a.button:active
   transform: translate(0,-50%);
 }
 
-i.fas {
+a.button.round > i.fas {
   position:absolute;
   top: 50%;
   right: 50%;
@@ -209,7 +209,7 @@ div.action_btn_bar{
   display: block;
   margin-top: 50px;
   position: relative;
-  height: 60px;
+  min-height: 10px;
 }
 
 .row{
