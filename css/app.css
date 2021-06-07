@@ -60,18 +60,6 @@ footer {
   box-shadow: 0 0 0 2.0px rgb(20, 228, 106);
 }
 
-#counter_display{
-  left: 10px;
-  /* background-color: green; */
-  width:40px;
-  height:40px;
-}
-
-#new_counter_btn{
-  right: 10px;
-  width:40px;
-  height:40px;
-}
 
 .round{
   border-radius: 50%;
@@ -82,18 +70,7 @@ footer {
   height:50px;
 }
 
-#main_btn{
-  display: inline-block;
-  position: relative;
-  margin-top: 60px;
-  margin-bottom: 10px;
-  left : 50%;
-  transform: translate( -50%, 0%);
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 10px;
-  /* background-color: #FFA726; */
-}
+
 
 /* my_tooltip container */
 .my_tooltip {
@@ -151,6 +128,10 @@ font-weight: 900;
   -webkit-font-smoothing: antialiased;
 }
 
+.edit:hover::before{
+  color:black;
+}
+
 .delete::before{
   font-family: "Font Awesome 5 Free"; 
 font-weight: 900;
@@ -195,7 +176,7 @@ a.button:active
   height: 90%;
   position: absolute;
   right:25%;
-  overflow-;
+  overflow: scroll;
   background-color: #ddd;
 }
 
@@ -217,4 +198,84 @@ i.fas {
   right: 50%;
   transform: translate(50%, -50%);
   /* color:white; */
+}
+
+div.action_btn_bar{
+  display: block;
+  margin-top: 50px;
+  position: relative;
+  height: 60px;
+}
+
+.row{
+  margin:5px;
+}
+/**************************/
+/*                        */
+/*    Nav bar buttons     */
+/*                        */
+/**************************/
+.slot_top_right_1{
+  right: 10px;
+  width:40px;
+  height:40px;
+}
+
+.slot_top_left_1{
+  left: 10px;
+  width:40px;
+  height:40px;
+}
+
+.slot_top_right_2{
+  right: 60px;
+  width:40px;
+  height:40px;
+}
+
+.slot_top_left_2{
+  left: 60px;
+  width:40px;
+  height:40px;
+}
+
+/*************************/
+/*                       */
+/*ID specific formatting */
+/*                       */
+/*************************/
+
+
+#main_btn{
+  display: block;
+  position: absolute;
+  /* margin-top: 60px; */
+  /* margin-bottom: 10px; */
+  left : 55%;
+  top: 50%;
+  transform: translate( -50%, -50%);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  /* background-color: #FFA726; */
+}
+
+#save{
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: 50%;
+  /* margin-top: 60px; */
+  /* margin-bottom: 10px; */
+  left : 45%;
+  transform: translate( -50%, -50%);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  /* background-color: #FFA726; */
+}
+
+#edit_form{
+  margin-top: 15px;
 }

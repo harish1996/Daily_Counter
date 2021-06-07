@@ -72,10 +72,15 @@
     
     <div id="view_page" class="page">
         <div class="button_bar">
-            <a id="new_counter_btn" class="button round" onclick="flipflop(this)"> <i class="fas fa-plus-circle"></i> </a>
+            <a id="new_counter_btn" class="button round slot_top_right_1" onclick="flipflop(this)"> <i class="fas fa-plus-circle"></i> </a>
+            <a id="undo" class="button round slot_top_right_2" onclick=""> <i class="fas fa-undo-alt"></i> </a>
         </div>
 
-        <a id="main_btn" class="button"> Update Day </a>
+        <div class="action_btn_bar">
+            <a id="save" class="button"> <i class="fas fa-save"></i> </a>
+            <a id="main_btn" class="button"> Update Day </a>
+        </div>
+        
 
         <div class="view_box">
             <h1 class="section_title">
@@ -89,12 +94,8 @@
                         <span class="hint my_tooltip"> 
                             <span class="tooltiptext"> 60 per day <br> 0.9 forward <br> 1.1. backward </span> 
                         </span>
-                        <span class="edit my_tooltip"> 
-                            <span class="tooltiptext"> edit </span>
-                        </span>
-                        <span class="delete my_tooltip"> 
-                            <span class="tooltiptext"> delete </span>
-                        </span>
+                        <span class="edit" onclick="edit( 'id' )"> </span>
+                        <span class="delete"> </span>
                     </li>
 
                     <li> 
@@ -103,12 +104,8 @@
                         <span class="hint my_tooltip"> 
                             <span class="tooltiptext"> 60 per day <br> 0.9 forward <br> 1.1. backward </span> 
                         </span>
-                        <span class="edit my_tooltip"> 
-                            <span class="tooltiptext"> edit </span>
-                        </span>
-                        <span class="delete my_tooltip"> 
-                            <span class="tooltiptext"> delete </span>
-                        </span>
+                        <span class="edit"> </span>
+                        <span class="delete"> </span>
                     </li>
 
                     <li> 
@@ -117,12 +114,8 @@
                         <span class="hint my_tooltip"> 
                             <span class="tooltiptext"> 60 per day <br> 0.9 forward <br> 1.1. backward </span> 
                         </span>
-                        <span class="edit my_tooltip"> 
-                            <span class="tooltiptext"> edit </span>
-                        </span>
-                        <span class="delete my_tooltip"> 
-                            <span class="tooltiptext"> delete </span>
-                        </span>
+                        <span class="edit"> </span>
+                        <span class="delete"> </span>
                     </li>
                 </ul>
             </div>
@@ -131,13 +124,36 @@
     </div>
 
     <div id="editing" class="page" style="display:none">
+        <div class="button_bar">
+            <a id="done_editing" class="button round slot_top_left_1" onclick=""> <i class="fas fa-check-circle"></i> </a>
+            <a id="cancel_editing" class="button round slot_top_right_1" onclick="flipflop(this)"> <i class="fas fa-times-circle"></i> </a>
+        </div>
+
+        <div class="action_btn_bar">
+
+        </div>
+        <div class="view_box">
+            <h1 class="section_title">
+                Edit Existing Counter
+            </h1>
+            <form id="edit_form">
+                <div class="form-group row">
+                    <label for="current_value" class="col-m-2 col-form-label"> Current Value </label>
+                    <input type="number" class="form-control col-m-10" id="current_value" value="45">
+                </div>
+                <div class="form-group row">
+                    <label for="full_label" class="col-m-2 col-form-label"> Full Label </label>
+                    <input type="text" class="form-control col-m-10" id="full_label" value="CounterA">
+                </div>
+            </form>
+        </div>
 
     </div>
 
 
     <div id="create_new" class="page" style="display:none">
         <div class="button_bar">
-            <a id="counter_display" class="button round" onclick="flipflop(this)"> <i class="fas fa-home"></i> </a>
+            <a id="counter_display" class="button round slot_top_left_1" onclick="flipflop(this)"> <i class="fas fa-home"></i> </a>
         </div>
     </div>
     

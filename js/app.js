@@ -103,8 +103,14 @@ function flipflop( e )
       switch_pages( "create_new" );
       break;
     case "counter_display":
+    case "cancel_editing":
       switch_pages("view_page");
       break;
   }
 
+}
+
+function edit( name, val, amnt )
+{
+  switch_pages("editing");
 }
