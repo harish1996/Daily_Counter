@@ -114,3 +114,22 @@ function edit( name, val, amnt )
 {
   switch_pages("editing");
 }
+
+function dummy_ramp()
+{
+  var rampdiv = document.getElementById("ramp_form");
+  var ramping = document.getElementById("ramping");
+  
+  rampdiv.style.display="none";
+  ramping.style.display="block";
+
+}
+
+function dummy_cancel_ramp()
+{
+  var rampdiv = document.getElementById("ramp_form");
+  var ramping = document.getElementById("ramping");
+
+  rampdiv.style.display="block";
+  ramping.style.display="none";
+}
