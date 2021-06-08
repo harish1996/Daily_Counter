@@ -212,6 +212,10 @@ div.action_btn_bar{
   min-height: 10px;
 }
 
+div.action_btn_bar > div > button{
+  border-radius: 10px;
+}
+
 .row{
   margin:5px;
 }
