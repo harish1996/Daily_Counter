@@ -8,8 +8,9 @@
     "orientation": "portrait-primary",
     "icons": [
       {
-        "src": "/images/icons/loopico.png",
-        "type": "image/png", "sizes": "72x72"
+        "src": "/images/icons/loop2.png",
+        "type": "image/png", "sizes": "320x320",
+        "purpose": "any"
       }
     ]
   }
