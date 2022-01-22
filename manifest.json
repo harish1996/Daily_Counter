@@ -1,0 +1,16 @@
+{
+    "name": "Daily Counter",
+    "short_name": "Counter",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/images/icons/loopico.png",
+        "type": "image/png", "sizes": "72x72"
+      }
+    ]
+  }
+  
