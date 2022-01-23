@@ -152,7 +152,7 @@ function dummy_create_new()
 
 if( "serviceWorker" in navigator ){
   window.addEventListener("load",function(){
-    navigator.serviceWorker.register(window.location.pathname+"/serviceWorker.js").then(
+    navigator.serviceWorker.register(window.location.pathname+"/serviceWorker.js",{"scope":window.location.pathname}).then(
       res => {
         console.log("Service worker registered")
       }).catch(
