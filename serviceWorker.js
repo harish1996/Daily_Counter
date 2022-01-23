@@ -1,12 +1,12 @@
 const staticDevCoffee = "dev-counter"
 const assets = [
-"/",
-"/index.html",
-"/css/app.css",
-"/css/extras.css",
-"/js/app.js",
-"/images/icons/loopico.png",
-"/images/icons/loop.jpg",
+"",
+"index.html",
+"css/app.css",
+"css/extras.css",
+"js/app.js",
+"images/icons/loopico.png",
+"images/icons/loop.jpg",
 ]
 
 self.addEventListener("install", 
