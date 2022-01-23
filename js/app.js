@@ -154,7 +154,7 @@ if( "serviceWorker" in navigator ){
   window.addEventListener("load",function(){
     navigator.serviceWorker.register(window.location.pathname+"/serviceWorker.js",{"scope":window.location.pathname}).then(
       res => {
-        console.log("Service worker registered")
+        console.log("Service worker registered"+res.scope)
       }).catch(
       err => {
         console.log("Service worker registration failed",err)
