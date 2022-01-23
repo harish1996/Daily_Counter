@@ -149,9 +149,10 @@ function dummy_create_new()
   }, 3000);
 }
 
+
 if( "serviceWorker" in navigator ){
   window.addEventListener("load",function(){
-    navigator.serviceWorker.register("/serviceWorker.js").then(
+    navigator.serviceWorker.register(window.location.pathname+"/serviceWorker.js").then(
       res => {
         console.log("Service worker registered")
       }).catch(
